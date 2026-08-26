@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>💰 Expense Tracker</h1>
+        <p>Track your daily expenses easily</p>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Add Expense Section -->
+        <section>
+            <h2>Add New Expense</h2>
+
+            <form>
+
+                <div>
+                    <label for="expenseName">Expense Name:</label>
+                    <input 
+                        type="text" 
+                        id="expenseName"
+                        name="expenseName"
+                        placeholder="e.g. Food"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="amount">Amount:</label>
+                    <input 
+                        type="number"
+                        id="amount"
+                        name="amount"
+                        placeholder="e.g. 500"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="category">Category:</label>
+
+                    <select id="category" name="category">
+
+                        <option value="">Select Category</option>
+                        <option value="food">Food</option>
+                        <option value="travel">Travel</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="bills">Bills</option>
+                        <option value="other">Other</option>
+
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="date">Date:</label>
+
+                    <input 
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <button type="submit">
+                    Add Expense
+                </button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Summary Section -->
+        <section>
+
+            <h2>Expense Summary</h2>
+
+            <div>
+                <h3>Total Expense</h3>
+                <p>₹ 5,250</p>
+            </div>
+
+            <div>
+                <h3>This Month</h3>
+                <p>₹ 3,500</p>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <!-- Expense List -->
+        <section>
+
+            <h2>Expense History</h2>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Expense</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Lunch</td>
+                        <td>Food</td>
+                        <td>₹ 250</td>
+                        <td>26-08-2026</td>
+                        <td>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Bus Ticket</td>
+                        <td>Travel</td>
+                        <td>₹ 100</td>
+                        <td>25-08-2026</td>
+                        <td>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Shopping</td>
+                        <td>Shopping</td>
+                        <td>₹ 1,500</td>
+                        <td>24-08-2026</td>
+                        <td>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Expense Tracker
+        </p>
+
+    </footer>
+
+</body>
+</html> 
